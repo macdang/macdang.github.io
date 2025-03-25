@@ -8,35 +8,12 @@ Paginate = 10
 [markup.goldmark.renderer]
 unsafe=true
 
-[author]
-	Handle = "Macdang"
-	FirstName = "Mac"
-	LastName = "Dang"
-	AboutPage = "/about"
-	Location = "Durham, NC"
-	FlickrID = "87151163@N00"
-
 [params]
-	Description = "Macdang"
-	ShowCopyright = true
-	RSSEnabled = true
-	EnablePreferredDarkAppearance = true
-	RSSMicropostTitles = false
-	mainSections = [ "posts", "microposts", "photos" ]
+  author = "Jack" # the author of the site
+  description = "A description of your site" # a description of your site that will be used in the meta tags
 
-[taxonomies]
-	tag = "tags"
-	category = "categories"
-	series = "series"
+  [params.homeInfoParams]
+    Title = "MacDang" # the text to display on the "/" homepage
+    Content = "This is a minimal web log inspired by Dario Amodei's personal [website](https://darioamodei.com/). Add some more text here that will be displayed on your homepage (you can use markdown)."
+    Description = "A minimal web log." # The description of the home page that will be used in the open graph meta tags
 
-[[menu.main]]
-	name = "Post Archive"
-	weight = 1
-	identifier = "posts"
-	url = "/posts/"
-
-[[menu.main]]
-	name = "Photography"
-	weight = 2
-	identifier = "photoography"
-	url = "https://jnjosh.photography"
